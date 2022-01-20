@@ -1,38 +1,191 @@
-.App {
-  text-align: center;
+:root {
+  --main-blue-color: rgb(2, 2, 161);
+  --navbar-color: rgb(0, 0, 128);
+  --white-smoke-color: whitesmoke;
+  --header-name-color: rgba(161, 161, 243, 0.623);
+  --header-text-color: rgb(194, 167, 231);
+  --add-book-btn-color: rgba(128, 128, 216, 0.623);
+  --add-book-btn-hover: rgba(166, 166, 235, 0.623);
+  --add-modal-background: rgba(47, 47, 194);
+  --red-color: red;
+  --cancel-btn-color: grey;
+  --cancel-btn-hover: rgb(99, 96, 96);
+  --white-color: white;
+  --edit-title-color: rgb(146,90,202);
+  --edit-btn-hover: rgb(115, 49, 182);
+  --table-td-color: rgb(154, 123, 185);
+  --delete-btn-color: rgb(207, 60, 195);
+  --delete-btn-hover: rgb(153, 40, 144);
+}
+
+body {
+  background-color: var(--main-blue-color);
+}
+
+.main-container {
+  color: var(--white-smoke-color);
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: 3px solid;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-custom {
+  background-color: var(--navbar-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/***** Header ************************/
+.header-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-name {
+  padding-left: 1em;
+  color: var(--header-name-color) !important;
+  font-weight: bolder;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-text {
+  padding-left: 1em;
+  color: var(--header-text-color);
+  font-style: italic;
+}
+
+/***** Add book button *******************/
+.add-book-btn {
+  position: absolute !important;
+  margin-right: 0;
+  right: 3em !important;
+  background-color: var(--add-book-btn-color) !important;
+  color: var(--white-color) !important;
+  border-color: var(--white-color) !important;
+}
+
+.add-book-btn:hover,
+.addModalBtn:hover {
+  background-color: var(--add-book-btn-hover) !important;
+}
+
+/***** Modal titles ******************/
+.add-modal .modal-content {
+  background-color: var(--add-modal-background) !important;
+}
+
+.add-modal-title {
+  color: var(--header-name-color) !important;
+  font-weight: bolder !important;
+}
+
+.must-add {
+  color: var(--red-color);
+}
+
+/**** Modal buttons ********************/
+.cancel-modal-btn {
+  background-color: var(--cancel-btn-color) !important;
+  border-color: var(--white-color) !important;
+  color: var(--white-color) !important;
+  margin-right: 1em;
+}
+
+.cancel-modal-btn:hover {
+  background-color: var(--cancel-btn-hover) !important;
+}
+
+.add-modal-btn {
+  background-color: var(--add-book-btn-color) !important;
+  border-color: var(--white-color) !important;
+  color: var(--white-color) !important;
+}
+
+.add-modal-btn:hover {
+  background-color: var(--add-book-btn-hover) !important;
+}
+
+/***** Edit page ************************/
+.edit-form {
+  width: 50%;
+  margin: auto;
+}
+
+.edit-title {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: var(--edit-title-color);
+  font-weight: bolder;
+}
+
+.edit-btn-group {
+  float: right;
+}
+
+.cancel-edit-btn {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.cancel-edit-btn:hover {
+  color: var(--white-color);
+}
+
+/******** Table ***********************/
+.table-container {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+#table_id {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+td {
+  border-right: 1px solid var(--table-td-color);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+th,
+.rowIndex {
+  color: var(--edit-title-color) !important;
+  text-align: center;
+}
+
+.row-id {
+  color: var(--header-text-color);
+}
+
+.edit-btn,
+.edit-modal-btn {
+  background-color: var(--edit-title-color) !important;
+  color: var(--white-color) !important;
+  border-color: var(--white-color) !important;
+}
+
+.edit-btn:hover,
+.edit-modal-btn:hover {
+  background-color: var(--edit-btn-hover) !important;
+}
+
+.delete-btn {
+  background-color: var(--delete-btn-color) !important;
+  color: var(--white-color) !important;
+  border-color: var(--white-color) !important;
+}
+
+.delete-btn:hover {
+  background-color: var(--delete-btn-hover) !important;
+}
+
+.no-data {
+  color: var(--header-text-color) !important;
+  font-weight: bolder;
 }

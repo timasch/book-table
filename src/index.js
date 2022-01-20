@@ -1,14 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+import Navbar from "./components/BookNavbar";
+import Edit from "./components/Edit";
+import reportWebVitals from "./reportWebVitals";
+import { BookProvider } from "./context/BookContext";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BookProvider>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/edit/:id" element={<Edit />} />
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>There is nothing here!</p>
+            </main>
+          }
+        />
+      </Routes>
+    </Router>
+  </BookProvider>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
