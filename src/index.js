@@ -10,7 +10,7 @@ import { BookProvider } from "./context/BookContext";
 
 ReactDOM.render(
   <BookProvider>
-    <Router basename="/react-books">
+    <Router basename="/book-table">
       <Navbar />
       <Routes>
         <Route path="/" element={<App />} />

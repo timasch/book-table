@@ -2,7 +2,7 @@
   "name": "react-book-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://timasch.github.io/react-books",
+  "homepage": "https://timasch.github.io/book-table",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
