@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-books/static/css/main.697d64e3.css",
-    "main.js": "/react-books/static/js/main.5fdef67d.js",
-    "static/js/787.633a2276.chunk.js": "/react-books/static/js/787.633a2276.chunk.js",
-    "index.html": "/react-books/index.html",
-    "main.697d64e3.css.map": "/react-books/static/css/main.697d64e3.css.map",
-    "main.5fdef67d.js.map": "/react-books/static/js/main.5fdef67d.js.map",
-    "787.633a2276.chunk.js.map": "/react-books/static/js/787.633a2276.chunk.js.map"
+    "main.css": "/book-table/static/css/main.697d64e3.css",
+    "main.js": "/book-table/static/js/main.21d953b8.js",
+    "static/js/787.633a2276.chunk.js": "/book-table/static/js/787.633a2276.chunk.js",
+    "index.html": "/book-table/index.html",
+    "main.697d64e3.css.map": "/book-table/static/css/main.697d64e3.css.map",
+    "main.21d953b8.js.map": "/book-table/static/js/main.21d953b8.js.map",
+    "787.633a2276.chunk.js.map": "/book-table/static/js/787.633a2276.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.697d64e3.css",
-    "static/js/main.5fdef67d.js"
+    "static/js/main.21d953b8.js"
   ]
 }
